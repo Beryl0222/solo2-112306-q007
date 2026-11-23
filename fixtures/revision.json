@@ -1,76 +1,61 @@
 {
-  "frame": "probe-021",
-  "calibration": "cal-center-4",
-  "phase_origin": [
-    0.1,
-    -0.05
-  ],
-  "samples": [
-    {
-      "position": [
-        0.0,
-        0.0
-      ],
-      "value": [
-        1.0,
-        0.0
-      ],
-      "weight": 1.0,
-      "valid": true
-    },
-    {
-      "position": [
-        0.2,
-        0.7
-      ],
-      "value": [
-        0.0,
-        -0.5
-      ],
-      "weight": 0.75,
-      "valid": true
-    },
-    {
-      "position": [
-        0.2,
-        0.7
-      ],
-      "value": [
-        0.2,
-        0.1
-      ],
-      "weight": 0.5,
-      "valid": false
-    }
-  ],
-  "frequency_grid": {
-    "shape": [
-      4,
-      4
+  "capture": "capture-7-b",
+  "calibration": {
+    "id": "cal-center-5",
+    "phase_origin": [
+      -0.15,
+      0.17
     ],
-    "origin": [
-      -1.0,
-      -1.0
-    ],
-    "step": [
-      0.5,
-      0.5
+    "phase": [
+      0,
+      1
     ]
   },
-  "requested_windows": [
-    [
-      0,
-      0,
-      2,
-      3
-    ],
-    [
-      1,
-      2,
-      3,
-      2
-    ]
+  "requests": [
+    {
+      "frame": "probe-021",
+      "window": [
+        1,
+        2,
+        3,
+        3
+      ],
+      "precision": "training"
+    },
+    {
+      "frame": "probe-022",
+      "window": [
+        0,
+        0,
+        3,
+        3
+      ],
+      "precision": "diagnostic"
+    }
   ],
-  "revision": "synthetic-revision-2",
-  "note": "用于说明资料发生修订，不包含预设的业务计算结论。"
+  "upstream": [
+    {
+      "read_key": "r1",
+      "local_frequency": [
+        1,
+        2
+      ],
+      "value": [
+        0.1,
+        0.2
+      ]
+    },
+    {
+      "read_key": "r2",
+      "local_frequency": [
+        0,
+        0
+      ],
+      "value": [
+        -0.2,
+        0.1
+      ]
+    }
+  ],
+  "replaces": "capture-7-a"
 }
