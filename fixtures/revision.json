@@ -1,0 +1,76 @@
+{
+  "frame": "probe-021",
+  "calibration": "cal-center-4",
+  "phase_origin": [
+    0.1,
+    -0.05
+  ],
+  "samples": [
+    {
+      "position": [
+        0.0,
+        0.0
+      ],
+      "value": [
+        1.0,
+        0.0
+      ],
+      "weight": 1.0,
+      "valid": true
+    },
+    {
+      "position": [
+        0.2,
+        0.7
+      ],
+      "value": [
+        0.0,
+        -0.5
+      ],
+      "weight": 0.75,
+      "valid": true
+    },
+    {
+      "position": [
+        0.2,
+        0.7
+      ],
+      "value": [
+        0.2,
+        0.1
+      ],
+      "weight": 0.5,
+      "valid": false
+    }
+  ],
+  "frequency_grid": {
+    "shape": [
+      4,
+      4
+    ],
+    "origin": [
+      -1.0,
+      -1.0
+    ],
+    "step": [
+      0.5,
+      0.5
+    ]
+  },
+  "requested_windows": [
+    [
+      0,
+      0,
+      2,
+      3
+    ],
+    [
+      1,
+      2,
+      3,
+      2
+    ]
+  ],
+  "revision": "synthetic-revision-2",
+  "note": "用于说明资料发生修订，不包含预设的业务计算结论。"
+}

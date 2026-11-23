@@ -1,0 +1,9 @@
+{
+  "format": 1,
+  "fixture": "probe_nufft",
+  "synthetic": true,
+  "records": [
+    "primary.json",
+    "revision.json"
+  ]
+}
