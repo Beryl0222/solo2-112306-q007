@@ -29,7 +29,10 @@ class FixtureContractTests(unittest.TestCase):
         revision = read_fixture("revision.json")
         height, width = primary["frequency_grid"]["shape"]
         self.assertEqual(primary["frequency_grid"]["step"], [1, 1])
-        for y, x, dy, dx in primary["requested_windows"]:
+        read_keys = {query["read_key"] for query in primary["requests"]}
+        self.assertFalse({trace["read_key"] for trace in revision["upstream"]} - read_keys)
+        for query in primary["requests"]:
+            y, x, dy, dx = query["window"]
             self.assertLessEqual(y + dy, height)
             self.assertLessEqual(x + dx, width)
         ids = set()

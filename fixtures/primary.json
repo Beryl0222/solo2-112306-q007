@@ -203,20 +203,6 @@
       1
     ]
   },
-  "requested_windows": [
-    [
-      0,
-      0,
-      3,
-      3
-    ],
-    [
-      1,
-      2,
-      3,
-      3
-    ]
-  ],
   "capture": "capture-7-a",
   "second_probe": {
     "frame": "probe-022",
@@ -235,5 +221,29 @@
         "valid": true
       }
     ]
-  }
+  },
+  "requests": [
+    {
+      "read_key": "r1",
+      "frame": "probe-021",
+      "window": [
+        0,
+        0,
+        3,
+        3
+      ],
+      "precision": "diagnostic"
+    },
+    {
+      "read_key": "r2",
+      "frame": "probe-021",
+      "window": [
+        1,
+        2,
+        3,
+        3
+      ],
+      "precision": "training"
+    }
+  ]
 }
